@@ -5,7 +5,7 @@ import numpy as np
 
 import torch
 import torch.nn.functional as F
-from utils.utils import load_yaml, im_to_torch, get_subwindow_tracking, make_scale_pyramid, python2round
+from track_utils import load_yaml, im_to_torch, get_subwindow_tracking, make_scale_pyramid, python2round
 
 
 class Ocean(object):
