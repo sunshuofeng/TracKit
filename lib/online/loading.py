@@ -3,7 +3,7 @@ import os
 import sys
 from pathlib import Path
 import importlib
-from online.model_constructor import NetConstructor
+from lib.online.model_constructor import NetConstructor
 
 def check_keys(model, pretrained_state_dict):
     ckpt_keys = set(pretrained_state_dict.keys())
