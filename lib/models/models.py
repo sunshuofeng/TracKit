@@ -1,24 +1,24 @@
 import math
 import torch
 import torch.nn as nn
-from .ocean import Ocean_
-from .oceanplus import OceanPlus_
-from .oceanTRT import OceanTRT_
-from .siamfc import SiamFC_
-from .connect import box_tower, AdjustLayer, AlignHead, Corr_Up, MultiDiCorr, OceanCorr
-from .backbones import ResNet50, ResNet22W
-from .mask import MMS, MSS
-from .modules import MultiFeatureBase
+from lib.models.ocean import Ocean_
+from lib.models.oceanplus import OceanPlus_
+from lib.models.oceanTRT import OceanTRT_
+from lib.models.siamfc import SiamFC_
+from lib.models.connect import box_tower, AdjustLayer, AlignHead, Corr_Up, MultiDiCorr, OceanCorr
+from lib.models.backbones import ResNet50, ResNet22W
+from lib.models.mask import MMS, MSS
+from lib.modules import MultiFeatureBase
 
 import os
 import sys
-sys.path.append('../lib')
+# sys.path.append('../lib')
 
-import models.online.classifier.features as clf_features
-import models.online.classifier.initializer as clf_initializer
-import models.online.classifier.optimizer as clf_optimizer
-import models.online.classifier.linear_filter as target_clf
-from online import TensorList, load_network
+import lib.models.online.classifier.features as clf_features
+import lib.models.online.classifier.initializer as clf_initializer
+import lib.models.online.classifier.optimizer as clf_optimizer
+import lib.models.online.classifier.linear_filter as target_clf
+from lib.online import TensorList, load_network
 
 
 class Ocean(Ocean_):
