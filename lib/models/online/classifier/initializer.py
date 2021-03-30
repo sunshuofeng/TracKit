@@ -5,8 +5,8 @@ import torch.nn.functional as F
 # sys.path.append('../../../../lib')
 #
 
-from models.online.layers.blocks import conv_block
-from models.online.external.PreciseRoIPooling.pytorch.prroi_pool import PrRoIPool2D
+from lib.models.online.layers.blocks import conv_block
+from lib.models.online.external.PreciseRoIPooling.pytorch.prroi_pool import PrRoIPool2D
 import math
 
 
