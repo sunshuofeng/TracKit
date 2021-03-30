@@ -8,7 +8,7 @@ from lib.models.siamfc import SiamFC_
 from lib.models.connect import box_tower, AdjustLayer, AlignHead, Corr_Up, MultiDiCorr, OceanCorr
 from lib.models.backbones import ResNet50, ResNet22W
 from lib.models.mask import MMS, MSS
-from lib.modules import MultiFeatureBase
+from lib.models.modules import MultiFeatureBase
 
 import os
 import sys
