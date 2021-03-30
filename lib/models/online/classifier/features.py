@@ -2,8 +2,8 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 from torchvision.models.resnet import BasicBlock, Bottleneck
-from models.online.layers.normalization import InstanceL2Norm
-from models.online.layers.transform import InterpCat
+from lib.models.online.layers.normalization import InstanceL2Norm
+from lib.models.online.layers.transform import InterpCat
 
 
 def residual_basic_block(feature_dim=256, num_blocks=1, l2norm=True, final_conv=False, norm_scale=1.0, out_dim=None,
