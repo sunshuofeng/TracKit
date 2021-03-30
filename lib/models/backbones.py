@@ -6,7 +6,7 @@
 
 import torch
 import torch.nn as nn
-from .modules import  Bottleneck, ResNet_plus2, Bottleneck_BIG_CI, ResNet
+from lib.models.modules import  Bottleneck, ResNet_plus2, Bottleneck_BIG_CI, ResNet
 
 eps = 1e-5
 # ---------------------
