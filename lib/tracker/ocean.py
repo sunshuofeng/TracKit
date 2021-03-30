@@ -195,7 +195,7 @@ class Ocean(object):
         x_crop, _ = get_subwindow_tracking(im, target_pos, p.instance_size, python2round(s_x), avg_chans)
         x_crop = x_crop.unsqueeze(0)
 
-        target_pos, target_sz, _ = self.update(net, x_crop.cuda(), target_pos, target_sz*scale_z, window, scale_z, p)
+        target_pos, target_sz, score = self.update(net, x_crop.cuda(), target_pos, target_sz*scale_z, window, scale_z, p)
 
         target_pos[0] = max(0, min(state['im_w'], target_pos[0]))
         target_pos[1] = max(0, min(state['im_h'], target_pos[1]))
@@ -204,6 +204,7 @@ class Ocean(object):
         state['target_pos'] = target_pos
         state['target_sz'] = target_sz
         state['p'] = p
+        state['score']=score
 
         return state
 
