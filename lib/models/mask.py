@@ -2,7 +2,7 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .connect import xcorr_depthwise
+from lib.models.connect import xcorr_depthwise
 
 class ARN(nn.Module):
     """
