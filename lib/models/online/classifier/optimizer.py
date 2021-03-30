@@ -1,9 +1,9 @@
 import torch.nn as nn
 import torch
 import torch.nn.functional as F
-import models.online.layers.filter as filter_layer
-import models.online.layers.activation as activation
-from models.online.layers.distance import DistanceMap
+import lib.models.online.layers.filter as filter_layer
+import lib.models.online.layers.activation as activation
+from lib.models.online.layers.distance import DistanceMap
 import math
 
 
